@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+}
+.flipped {
+  background: red;
+}
+.show {
+  visibility: visible;
+}
+.card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+.card:hover {
+  cursor: pointer;
+}

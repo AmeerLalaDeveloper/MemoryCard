@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-size: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -10;
+  /* background: url("../memorycard.jpg") no-repeat center center/cover; */
+  background: #000;
+}
+.container {
+  max-width: 900px;
+  width: 75vw;
+  height: 75vh;
+  border: 1px solid green;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  color: #fff;
+}
+/*Heading Styling*/
+h1 {
+  font-size: 1.5rem;
+
+  text-shadow: 3px 3px 3px rgb(30, 39, 39);
+  letter-spacing: 2px;
+}
+/*Form Styling*/
+#myForm {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#myForm .form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#myForm select {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+#myForm label {
+  width: 50%;
+
+  font-size: 1.2rem;
+}
+#submit {
+  display: block;
+  padding: 1rem;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  margin: 2rem auto;
+}
+#submit:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/*Social Links Styling*/
+.social-links {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.social-links span i {
+  font-size: 2rem;
+  color: blue;
+}
